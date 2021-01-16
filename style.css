@@ -16,3 +16,15 @@ body {
     overflow: hidden;
     margin: 0;
 }
+
+button {
+    background-color: rgb(169, 69, 250);
+    color: #fafafa;
+    border: 0.0625rem rgb(169, 69, 250);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    padding: 1.25rem 1.875rem;
+    overflow: hidden;
+    margin: 0.625rem 0;
+}
