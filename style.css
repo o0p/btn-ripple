@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 
 * {
@@ -7,6 +6,7 @@
 }
 
 body {
+    background-color: #000;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -15,4 +15,38 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+
+button {
+    background-color: rgb(169, 69, 250);
+    color: #fafafa;
+    border: 0.0625rem rgb(169, 69, 250);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    padding: 1.25rem 1.875rem;
+    overflow: hidden; 
+    margin: 0.625rem 0;
+    position: relative;
+}
+button:focus {
+    outline: none;
+}
+
+button .circle {
+    position: absolute;
+    background-color: rgb(255, 224, 121);
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale .5s ease-out;
+}
+
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+
+    }
 }
