@@ -25,6 +25,19 @@ button {
     text-transform: uppercase;
     letter-spacing: 0.125rem;
     padding: 1.25rem 1.875rem;
-    overflow: hidden;
+    overflow: hidden; 
     margin: 0.625rem 0;
+    position: relative;
+}
+button:focus {
+    outline: none;
+}
+
+button .circle {
+    position: absolute;
+    background-color: rgb(255, 224, 121);
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
 }
